@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Prateek</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero {
+        background-color: yellow;
+        background-attachment: fixed;
+        background-image: url(data:image/jpeg;base64,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);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 500px;
+        background-position: left;
+        color: black;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 900;
+        text-indent: 50px;
+        background-clip: content-box;
+        border: 14px solid gray;
+        padding: 0px;
+        text-align: left;
+        margin: 500px;
+        float: left;
+        margin-bottom: 1000px;
+
+    }
+
+    h1 {
+        font-family: pacifico;
+        text-decoration: line-through;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .pratik {
+        font-family: pacifico;
+        color: black;
+        text-align: center;
+        background-attachment: fixed;
+        background-size: cover;
+        font-style: italic;
+        font-weight: 100;
+        text-transform: uppercase;
+
+    }
+
+    body {
+        background-color: lightblue;
+    }
+
+    .navbar {
+        background-color: black;
+        border-radius: 30px;
+        margin-top: 10px;
+
+    }
+
+    .navbar li {
+        float: left;
+        list-style: none;
+        margin: 13px 20px;
+    }
+
+    .navbar ul {
+        overflow: auto;
+        
+    }
+
+    .navbar li a {
+        padding: 3px 3px;
+        text-decoration: none;
+        color: white;
+
+    }
+
+    .navbar li a:hover {
+        background-color: red;
+    }
+
+    .search {
+        float: right;
+        color: white;
+        padding: 12px 75px;
+    }
+
+    .navbar input {
+        border: 2px solid black;
+        border-radius: 30px;
+        padding: 3px;
+        width: 129px;
+    }
+
+    .container {
+        text-align: center;
+    }
+   <!-- #sec{
+        text-align: left;
+         background-color: yellow;
+        background-attachment: fixed;
+        background-image: url(data:image/jpeg;base64,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);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 500px;
+        background-position: left;
+        color: black;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 900;
+        text-indent: 50px;
+        background-clip: content-box;
+        border: 14px solid gray;
+        padding: 0px;
+        text-align: right;
+        margin: 100px;
+        float: right;
+        
+    }-->
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="https://www.youtube.com/watch?v=4kgfnLpRUn8"> Home</a></li>
+                <li> <a href="#"> About</a></li>
+                <li><a href="#"> Contact</a> </li>
+                <li><a href="#"> Services</a></li>
+                <div class="search">
+                    <input type="text" id="search" name="search" placeholder="Search the website">
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+    <h1 class="pratik"> This is a heading.</h1>
+    <p class="pratik"> This is a paragraph...</p>
+    <div class="hero">
+        <p class="container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+            optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+            obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+            tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
+            sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
+            recusandae alias error harum maxime adipisci amet laborum. Perspiciatis
+            minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit
+            quibusdam sed amet tempora. Sit laborum ab, eius fugit doloribus tenetur
+            fugiat, temporibus enim commodi iusto libero magni deleniti quod quam
+            consequuntur! Commodi minima excepturi repudiandae velit hic maxime
+            doloremque. Quaerat provident commodi consectetur veniam similique ad
+            earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo
+            fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores labore
+            suscipit quas? Nulla, placeat. Voluptatem quaerat non architecto ab laudantium
+            modi minima sunt esse temporibus sint culpa, recusandae aliquam numquam
+            totam ratione voluptas quod exercitationem fuga. Possimus quis earum veniam
+            quasi aliquam eligendi, placeat qui corporis!
+        </p>
+   <!-- </div>
+   <div id="sec">
+        <p>
+            publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+        </p>-->
+    </div>
+</body></html>
